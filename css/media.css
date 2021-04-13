@@ -1,0 +1,458 @@
+@media (max-width: 1010px) {
+    #blogs > * {
+        width: 50%;
+    }
+}
+@media (max-width: 966px) {
+    .item-reverse {
+        flex-direction: row;
+    }
+    .strategic-item {
+        padding: 20px 0;
+        grid-area:strategic-item;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    #projects{
+        grid-template-areas: ' projects-title projects-title . .'
+                          'projects-menu projects-menu projects-menu .'
+                          ' projects-galery projects-galery projects-galery projects-galery'   ;
+    }
+   
+
+    #services{
+        grid-template-areas: '. services-title services-title .'
+                         '. services-content  services-content .'   ;
+    } 
+
+    #team {
+        grid-template-areas: '. team-title team-title .'
+                            '.  team-content  team-content.';
+    }
+    .team-item {
+        width: 50%;
+    }
+
+     #footer-text h2 {
+        font-size: 66px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header-upper-title {
+        font-size: 116px;
+    }
+
+    #projects {
+        grid-template-areas: ' projects-title projects-title projects-title projects-title'
+                          'projects-menu projects-menu projects-menu projects-menu '
+                          ' projects-galery projects-galery projects-galery projects-galery'   ;
+    }
+    #testimonials {
+        grid-template-areas: '. testimonials-title testimonials-title .'
+                          '. testimonials-content testimonials-content .'      ;
+    }
+
+}
+
+@media (max-width: 712px) {
+    #footer-text h2 {
+        font-size: 34px;
+    }
+
+    #header-upper-subtitle {
+        width: 310px;
+    }
+
+    #about-items {
+        flex-direction: column;
+    }
+
+    .about-item {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 230px;
+        min-width: 200px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #about {
+        
+        grid-template-areas: '. about-header about-header about-header . '
+                             '. about-right about-right about-right . '
+                             '. about-items about-items about-items .';
+    }
+}
+@media (max-width: 543px) {
+    #header {
+        height: 543px;
+    }
+    #header-upper {
+        height: 275px; 
+        padding: 0;
+    }
+
+    #header-upper-title {
+        font-size: 79px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #header-upper-subtitle {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    #header-bottom {
+        background: none;
+    }
+
+    #header-bottom h1 {
+        margin: 0 auto;
+        width: 100%;
+        line-height: 80%;
+        text-align: center;
+    
+    }
+    #header-bottom nav {
+        text-align: center;
+    }
+
+   
+    #projects-menu li:first-child {
+        margin-left: 30px;
+    }
+    #projects-menu a {
+        font-style: 12pt;
+    }
+
+    #footer {
+        grid-template-areas: '. footer-text footer-text .'
+                            '. footer-nav footer-nav .';
+    }
+    #footer-nav {
+        grid-area: footer-nav;
+        width: 340px;
+        margin: 0;;
+    }
+
+    #blogs {
+       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    #services-content {
+        grid-area: services-content;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 570px;
+        height: 100%;
+        
+    }
+
+
+    .strategic-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .strategic-img {
+            width: 100%;
+            min-width: 0;
+            height: 288px;
+            position: relative;
+            overflow: hidden;
+        }
+
+     #header-bottom nav {
+            margin: 0 auto;
+        }
+    
+
+    #header-bottom nav li {
+        display: block;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #header-bottom nav li:first-child {
+        margin-left: 0;
+    }
+    
+    #testimonials {
+        align-content: center;
+        grid-template-areas: '. testimonials-title testimonials-title .'
+                          '. testimonials-content testimonials-content .'      ;
+    }
+    #testimonials-content{
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #010105;
+        box-sizing: border-box;
+        background: #010105;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: ' header '
+                             ' about ' 
+                             ' projects '
+                             ' strategic '
+                             ' services '
+                             ' team '
+                             ' testimonials '
+                             ' blogs '
+                             ' footer';
+    }
+    #header {
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 651px;
+        text-align: center;
+    }
+    #header-upper {
+        height: 231px;
+        padding-left: 0;
+        
+    }
+    #header-upper-title {
+        font-size: 49px;
+    }
+
+    #header-upper-subtitle {
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+   
+    
+    #header-bottom h1 {
+        margin: 0 auto;
+        margin-top: 40px;
+        font-size: 40px;
+        width: 100%;
+        line-height: 80%;
+    }
+    #header-bottom {
+        background: none;
+    }
+
+    #about {
+        padding: 20px 5px;
+        grid-area: about;
+        background: #fff;
+        display: grid;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'about-header'
+                             'about-right'
+                             
+                             'about-items';
+    }
+    #about-header h2 span {
+        font-size: 73px; 
+    }
+
+    #projects {
+        padding-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas: ' projects-title'
+                              'projects-menu'
+                              'strategic-text'
+                              'projects-galery'   ;
+    }
+    #projects-title {
+        grid-area: projects-title;
+        font-size: 30pt;
+        height: auto;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    #projects-menu a {
+        
+        font-size: 18px;
+    }
+
+    #projects-galery {
+        margin-top: 20px;
+    }
+
+    #strategic {
+        text-align: center;
+        padding: 20px 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'strategic-title' 
+                             'strategic-subtitle' 
+                             'strategic-text'
+                             'strategic-items' ;
+                             
+    }
+
+    #strategic-title {
+        font-size: 26pt;
+    }
+
+    #strategic-subtitle {
+        margin-top: 20px;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    #strategic-text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .strategic-item {
+        display: block;
+    }
+    .strategic-img {
+        max-width: 300px;
+    }
+
+    .strategic-item-inner {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-width: 260px;
+        max-width: 280px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+    }
+
+    #team {
+        padding: 20px 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'team-title'
+                            'team-content';
+        text-align: center; 
+    }
+
+    .team-item {
+        width: 100%;
+    }
+
+    #services { 
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'services-title'
+                             'services-content' ;
+                             background-size: cover ;
+    }
+
+    #services-title {
+        min-width: 267px;
+    }
+
+    #services-title {
+        font-size: 25pt;
+    }
+
+    #team-subtitle-1 {
+        width: 264px;
+    }
+    #team-subtitle-2 {
+        width: 264px;
+    }
+
+    #testimonials {
+        padding: 20px 0;
+        height: 500px;
+        color: #fff;
+        grid-area: testimonials;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: 'testimonials-title'
+                              'testimonials-content' ;
+    }
+    .testimonials-item {
+        
+        width: 50%;
+        max-width: 180px;
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    #testimonials-text {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #testimonials-title{
+        justify-self: center; 
+    }
+
+    #nav-title {
+        font-size: 48px;
+    }
+
+    #blogs {
+        padding: 20px 0;
+        background: #fff;
+        grid-area: blogs;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+
+    #blogs-menu {
+        margin-left: 40px;
+        margin: 20px 0;
+        color: #000;
+    }
+
+    #footer {
+        background: none;
+        min-height: 650px;
+        grid-template-columns:1fr;
+        grid-template-areas: 'footer-text'
+                            'footer-nav';
+    }
+
+    #footer-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer-nav a::after {
+       display: none;
+    }
+    #footer-text {
+        text-align: center;
+    }
+
+}
+
+
